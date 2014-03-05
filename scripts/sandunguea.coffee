@@ -5,11 +5,12 @@
 #   hubot sandunguea - Searches YouTube for the query and returns the video embed link.
 module.exports = (robot) ->
   robot.respond /(sandunguea|sobetea|bellaquea|perrea|perreo|sandungueo|sobeteo|bellaqueo)/i, (msg) ->
-    query = "Daddy Yankee - Muevete y Perrea"
+    query = "reggaeton"
+    console.log msg
     robot.http("http://gdata.youtube.com/feeds/api/videos")
       .query({
         orderBy: "relevance"
-        'max-results': 15
+        'max-results': 50
         alt: 'json'
         q: query
       })
