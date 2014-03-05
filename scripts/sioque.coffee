@@ -24,6 +24,10 @@ module.exports = (robot) ->
       "papi",
       "panita",
       "Firma",
+      "llaveria",
+      "calida",
+      "calidoso",
+      "campeon",
       "#{user}",
     ]
     c = msg.random confirmations
