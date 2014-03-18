@@ -21,7 +21,7 @@ module.exports = (robot) ->
       "Con esas dos tapas reclama este salchichón",
     ]
 
-    msg.send "#{msg.random(piropos)}"
+    #msg.send "#{msg.random(piropos)}"
 
     tags = ["teen", "big%20boobs"]
     tag = msg.random tags
