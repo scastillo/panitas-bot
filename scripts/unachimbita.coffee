@@ -23,7 +23,10 @@ module.exports = (robot) ->
 
     msg.send "#{msg.random(piropos)}"
 
-    request({uri: 'http://apina.biz/?i_really=need_it&ruri=/random', jar: yes}, (err, res, body) ->
+    tags = ["teen", "big%20boobs"]
+    tag = msg.random tags
+
+    request({uri: 'http://apina.biz/?i_really=need_it&ruri=/random/teen', jar: yes}, (err, res, body) ->
       $ = cheerio.load(body)
       img_url = $('#big_image img').attr('src')
       msg.send img_url
